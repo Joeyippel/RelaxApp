@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A268BBA21DA3FC8600AAD868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBA11DA3FC8600AAD868 /* AppDelegate.swift */; };
+		A268BBA41DA3FC8600AAD868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBA31DA3FC8600AAD868 /* ViewController.swift */; };
+		A268BBA71DA3FC8600AAD868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268BBA51DA3FC8600AAD868 /* Main.storyboard */; };
+		A268BBA91DA3FC8600AAD868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A268BBA81DA3FC8600AAD868 /* Assets.xcassets */; };
+		A268BBAC1DA3FC8600AAD868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268BBAA1DA3FC8600AAD868 /* LaunchScreen.storyboard */; };
+		A268BBB71DA3FC8600AAD868 /* RelaxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBB61DA3FC8600AAD868 /* RelaxAppTests.swift */; };
+		A268BBC21DA3FC8600AAD868 /* RelaxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A268BBB31DA3FC8600AAD868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A268BB961DA3FC8600AAD868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A268BB9D1DA3FC8600AAD868;
+			remoteInfo = RelaxApp;
+		};
+		A268BBBE1DA3FC8600AAD868 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A268BB961DA3FC8600AAD868 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A268BB9D1DA3FC8600AAD868;
+			remoteInfo = RelaxApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A268BB9E1DA3FC8600AAD868 /* RelaxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelaxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A268BBA11DA3FC8600AAD868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A268BBA31DA3FC8600AAD868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A268BBA61DA3FC8600AAD868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A268BBA81DA3FC8600AAD868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A268BBAB1DA3FC8600AAD868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A268BBAD1DA3FC8600AAD868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A268BBB21DA3FC8600AAD868 /* RelaxAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A268BBB61DA3FC8600AAD868 /* RelaxAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxAppTests.swift; sourceTree = "<group>"; };
+		A268BBB81DA3FC8600AAD868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A268BBBD1DA3FC8600AAD868 /* RelaxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxAppUITests.swift; sourceTree = "<group>"; };
+		A268BBC31DA3FC8600AAD868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A268BB9B1DA3FC8600AAD868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A268BBAF1DA3FC8600AAD868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A268BBBA1DA3FC8600AAD868 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A268BB951DA3FC8600AAD868 = {
+			isa = PBXGroup;
+			children = (
+				A268BBA01DA3FC8600AAD868 /* RelaxApp */,
+				A268BBB51DA3FC8600AAD868 /* RelaxAppTests */,
+				A268BBC01DA3FC8600AAD868 /* RelaxAppUITests */,
+				A268BB9F1DA3FC8600AAD868 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A268BB9F1DA3FC8600AAD868 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A268BB9E1DA3FC8600AAD868 /* RelaxApp.app */,
+				A268BBB21DA3FC8600AAD868 /* RelaxAppTests.xctest */,
+				A268BBBD1DA3FC8600AAD868 /* RelaxAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A268BBA01DA3FC8600AAD868 /* RelaxApp */ = {
+			isa = PBXGroup;
+			children = (
+				A268BBA11DA3FC8600AAD868 /* AppDelegate.swift */,
+				A268BBA31DA3FC8600AAD868 /* ViewController.swift */,
+				A268BBA51DA3FC8600AAD868 /* Main.storyboard */,
+				A268BBA81DA3FC8600AAD868 /* Assets.xcassets */,
+				A268BBAA1DA3FC8600AAD868 /* LaunchScreen.storyboard */,
+				A268BBAD1DA3FC8600AAD868 /* Info.plist */,
+			);
+			path = RelaxApp;
+			sourceTree = "<group>";
+		};
+		A268BBB51DA3FC8600AAD868 /* RelaxAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A268BBB61DA3FC8600AAD868 /* RelaxAppTests.swift */,
+				A268BBB81DA3FC8600AAD868 /* Info.plist */,
+			);
+			path = RelaxAppTests;
+			sourceTree = "<group>";
+		};
+		A268BBC01DA3FC8600AAD868 /* RelaxAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */,
+				A268BBC31DA3FC8600AAD868 /* Info.plist */,
+			);
+			path = RelaxAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A268BB9D1DA3FC8600AAD868 /* RelaxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A268BBC61DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxApp" */;
+			buildPhases = (
+				A268BB9A1DA3FC8600AAD868 /* Sources */,
+				A268BB9B1DA3FC8600AAD868 /* Frameworks */,
+				A268BB9C1DA3FC8600AAD868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RelaxApp;
+			productName = RelaxApp;
+			productReference = A268BB9E1DA3FC8600AAD868 /* RelaxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A268BBB11DA3FC8600AAD868 /* RelaxAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A268BBC91DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxAppTests" */;
+			buildPhases = (
+				A268BBAE1DA3FC8600AAD868 /* Sources */,
+				A268BBAF1DA3FC8600AAD868 /* Frameworks */,
+				A268BBB01DA3FC8600AAD868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A268BBB41DA3FC8600AAD868 /* PBXTargetDependency */,
+			);
+			name = RelaxAppTests;
+			productName = RelaxAppTests;
+			productReference = A268BBB21DA3FC8600AAD868 /* RelaxAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A268BBBC1DA3FC8600AAD868 /* RelaxAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A268BBCC1DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxAppUITests" */;
+			buildPhases = (
+				A268BBB91DA3FC8600AAD868 /* Sources */,
+				A268BBBA1DA3FC8600AAD868 /* Frameworks */,
+				A268BBBB1DA3FC8600AAD868 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A268BBBF1DA3FC8600AAD868 /* PBXTargetDependency */,
+			);
+			name = RelaxAppUITests;
+			productName = RelaxAppUITests;
+			productReference = A268BBBD1DA3FC8600AAD868 /* RelaxAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A268BB961DA3FC8600AAD868 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Joey Ippel";
+				TargetAttributes = {
+					A268BB9D1DA3FC8600AAD868 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8KU9V2K6ER;
+						ProvisioningStyle = Automatic;
+					};
+					A268BBB11DA3FC8600AAD868 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8KU9V2K6ER;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A268BB9D1DA3FC8600AAD868;
+					};
+					A268BBBC1DA3FC8600AAD868 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8KU9V2K6ER;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A268BB9D1DA3FC8600AAD868;
+					};
+				};
+			};
+			buildConfigurationList = A268BB991DA3FC8600AAD868 /* Build configuration list for PBXProject "RelaxApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A268BB951DA3FC8600AAD868;
+			productRefGroup = A268BB9F1DA3FC8600AAD868 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A268BB9D1DA3FC8600AAD868 /* RelaxApp */,
+				A268BBB11DA3FC8600AAD868 /* RelaxAppTests */,
+				A268BBBC1DA3FC8600AAD868 /* RelaxAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A268BB9C1DA3FC8600AAD868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268BBAC1DA3FC8600AAD868 /* LaunchScreen.storyboard in Resources */,
+				A268BBA91DA3FC8600AAD868 /* Assets.xcassets in Resources */,
+				A268BBA71DA3FC8600AAD868 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A268BBB01DA3FC8600AAD868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A268BBBB1DA3FC8600AAD868 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A268BB9A1DA3FC8600AAD868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268BBA41DA3FC8600AAD868 /* ViewController.swift in Sources */,
+				A268BBA21DA3FC8600AAD868 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A268BBAE1DA3FC8600AAD868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268BBB71DA3FC8600AAD868 /* RelaxAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A268BBB91DA3FC8600AAD868 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A268BBC21DA3FC8600AAD868 /* RelaxAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A268BBB41DA3FC8600AAD868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A268BB9D1DA3FC8600AAD868 /* RelaxApp */;
+			targetProxy = A268BBB31DA3FC8600AAD868 /* PBXContainerItemProxy */;
+		};
+		A268BBBF1DA3FC8600AAD868 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A268BB9D1DA3FC8600AAD868 /* RelaxApp */;
+			targetProxy = A268BBBE1DA3FC8600AAD868 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A268BBA51DA3FC8600AAD868 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A268BBA61DA3FC8600AAD868 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A268BBAA1DA3FC8600AAD868 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A268BBAB1DA3FC8600AAD868 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A268BBC41DA3FC8600AAD868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A268BBC51DA3FC8600AAD868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A268BBC71DA3FC8600AAD868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KU9V2K6ER;
+				INFOPLIST_FILE = RelaxApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joey-Ippel.RelaxApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A268BBC81DA3FC8600AAD868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8KU9V2K6ER;
+				INFOPLIST_FILE = RelaxApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joey-Ippel.RelaxApp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A268BBCA1DA3FC8600AAD868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8KU9V2K6ER;
+				INFOPLIST_FILE = RelaxAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joey-Ippel.RelaxAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelaxApp.app/RelaxApp";
+			};
+			name = Debug;
+		};
+		A268BBCB1DA3FC8600AAD868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8KU9V2K6ER;
+				INFOPLIST_FILE = RelaxAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joey-Ippel.RelaxAppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RelaxApp.app/RelaxApp";
+			};
+			name = Release;
+		};
+		A268BBCD1DA3FC8600AAD868 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8KU9V2K6ER;
+				INFOPLIST_FILE = RelaxAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joey-Ippel.RelaxAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RelaxApp;
+			};
+			name = Debug;
+		};
+		A268BBCE1DA3FC8600AAD868 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8KU9V2K6ER;
+				INFOPLIST_FILE = RelaxAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Joey-Ippel.RelaxAppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = RelaxApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A268BB991DA3FC8600AAD868 /* Build configuration list for PBXProject "RelaxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A268BBC41DA3FC8600AAD868 /* Debug */,
+				A268BBC51DA3FC8600AAD868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A268BBC61DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A268BBC71DA3FC8600AAD868 /* Debug */,
+				A268BBC81DA3FC8600AAD868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A268BBC91DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A268BBCA1DA3FC8600AAD868 /* Debug */,
+				A268BBCB1DA3FC8600AAD868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A268BBCC1DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A268BBCD1DA3FC8600AAD868 /* Debug */,
+				A268BBCE1DA3FC8600AAD868 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A268BB961DA3FC8600AAD868 /* Project object */;
+}
