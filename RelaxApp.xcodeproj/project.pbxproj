@@ -14,6 +14,7 @@
 		A268BBAC1DA3FC8600AAD868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268BBAA1DA3FC8600AAD868 /* LaunchScreen.storyboard */; };
 		A268BBB71DA3FC8600AAD868 /* RelaxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBB61DA3FC8600AAD868 /* RelaxAppTests.swift */; };
 		A268BBC21DA3FC8600AAD868 /* RelaxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */; };
+		A2BDE6D91DA4052500D3C119 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BDE6D81DA4052500D3C119 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		A268BBBD1DA3FC8600AAD868 /* RelaxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxAppUITests.swift; sourceTree = "<group>"; };
 		A268BBC31DA3FC8600AAD868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2BDE6D81DA4052500D3C119 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A2BDE6DA1DA4053600D3C119 /* RelaxApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RelaxApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2BDE6D91DA4052500D3C119 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +85,7 @@
 				A268BBB51DA3FC8600AAD868 /* RelaxAppTests */,
 				A268BBC01DA3FC8600AAD868 /* RelaxAppUITests */,
 				A268BB9F1DA3FC8600AAD868 /* Products */,
+				A2BDE6D71DA4052500D3C119 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +102,7 @@
 		A268BBA01DA3FC8600AAD868 /* RelaxApp */ = {
 			isa = PBXGroup;
 			children = (
+				A2BDE6DA1DA4053600D3C119 /* RelaxApp.entitlements */,
 				A268BBA11DA3FC8600AAD868 /* AppDelegate.swift */,
 				A268BBA31DA3FC8600AAD868 /* ViewController.swift */,
 				A268BBA51DA3FC8600AAD868 /* Main.storyboard */,
@@ -123,6 +129,14 @@
 				A268BBC31DA3FC8600AAD868 /* Info.plist */,
 			);
 			path = RelaxAppUITests;
+			sourceTree = "<group>";
+		};
+		A2BDE6D71DA4052500D3C119 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2BDE6D81DA4052500D3C119 /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +209,17 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 8KU9V2K6ER;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
 					};
 					A268BBB11DA3FC8600AAD868 = {
 						CreatedOnToolsVersion = 8.0;
@@ -413,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RelaxApp/RelaxApp.entitlements;
 				DEVELOPMENT_TEAM = 8KU9V2K6ER;
 				INFOPLIST_FILE = RelaxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -426,6 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RelaxApp/RelaxApp.entitlements;
 				DEVELOPMENT_TEAM = 8KU9V2K6ER;
 				INFOPLIST_FILE = RelaxApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,6 +539,7 @@
 				A268BBC81DA3FC8600AAD868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A268BBC91DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxAppTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +548,7 @@
 				A268BBCB1DA3FC8600AAD868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A268BBCC1DA3FC8600AAD868 /* Build configuration list for PBXNativeTarget "RelaxAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +557,7 @@
 				A268BBCE1DA3FC8600AAD868 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
