@@ -10,7 +10,7 @@ import UIKit
 import MapKit
 
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
@@ -20,9 +20,34 @@ class ViewController: UIViewController {
         
         let distanceSpan:CLLocationDegrees = 2000
         
+        let location:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: 51.813298, longitude: 4.690093)
+        
         mapView.setRegion(MKCoordinateRegionMakeWithDistance(CLLocationCoordinate2DMake(51.813298, 4.690093), distanceSpan, distanceSpan), animated: true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = location
+        annotation.title = "Relax plek 1"
+        annotation.subtitle = "Leuke plek om te relaxen"
+        mapView.addAnnotation(annotation)
+        
+        let longPress = UILongPressGestureRecognizer(target: self, action: Selector(("action:")))
+        longPress.minimumPressDuration = 1.0
+        mapView.addGestureRecognizer(longPress)
+        
+        
     }
-
+    func action(gestureRecognizer:UIGestureRecognizer) {
+        var touchPoint = gestureRecognizer.location(in: self.mapView)
+        var newCoord:CLLocationCoordinate2D = mapView.converttoCoordinateFromPoint(touchPoint, toCoordinateFromView: self.mapView)
+        
+        var newAnnotation = MKPointAnnotation()
+        newAnnotation.coordinate = newCoord
+        newAnnotation.title = "New Location"
+        newAnnotation.subtitle = "New Subtitle"
+        mapView.addAnnotation(newAnnotation)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
