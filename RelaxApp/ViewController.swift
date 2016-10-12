@@ -37,10 +37,10 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
     }
     func action(gestureRecognizer:UIGestureRecognizer) {
-        var touchPoint = gestureRecognizer.location(in: self.mapView)
-        var newCoord:CLLocationCoordinate2D = mapView.converttoCoordinateFromPoint(touchPoint, toCoordinateFromView: self.mapView)
+        let touchPoint = gestureRecognizer.location(in: self.mapView)
+        let newCoord:CLLocationCoordinate2D = mapView.convert(touchPoint, toCoordinateFrom: self.mapView)
         
-        var newAnnotation = MKPointAnnotation()
+        let newAnnotation = MKPointAnnotation()
         newAnnotation.coordinate = newCoord
         newAnnotation.title = "New Location"
         newAnnotation.subtitle = "New Subtitle"
