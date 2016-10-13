@@ -20,7 +20,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-Rj-jZi"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wn7-Rj-jZi">
+                                <frame key="frameInset" width="1000" height="1000"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -43,7 +45,7 @@
         <scene sceneID="tNM-9t-KpW">
             <objects>
                 <navigationController id="5Wn-eI-ylO" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="f94-bM-3ZZ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="f94-bM-3ZZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -107,7 +109,7 @@
         <scene sceneID="J5o-9A-nEQ">
             <objects>
                 <navigationController id="pFE-WK-EAq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="mby-g0-do4">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="black" id="mby-g0-do4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,7 +144,7 @@
                                         <rect key="frame" x="0.0" y="64" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Nur-yb-Lrz" id="n2U-bL-wJ9">
-                                            <frame key="frameInset" width="375" height="300"/>
+                                            <frame key="frameInset" width="375" height="299"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" pitchEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mww-cM-MWE">
@@ -184,7 +186,7 @@
                                         <rect key="frame" x="0.0" y="364" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9D-V6-jUh" id="urz-u3-fgz">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" placeholder="Radius in meters" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-X5-oPA">
@@ -214,7 +216,7 @@
                                         <rect key="frame" x="0.0" y="408" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="STo-9d-OpD" id="oyk-Ea-hUA">
-                                            <frame key="frameInset" width="375" height="44"/>
+                                            <frame key="frameInset" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Reminder note to be shown" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jox-8X-4Pw">
