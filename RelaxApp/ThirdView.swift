@@ -23,7 +23,7 @@ class AddGeotificationViewController: UITableViewController {
   @IBOutlet weak var noteTextField: UITextField!
   @IBOutlet weak var mapView: MKMapView!
 
-  var delegate: AddGeotificationsViewControllerDelegate?
+    var delegate:AddGeotificationsViewControllerDelegate?
 
   override func viewDidLoad() {
     super.viewDidLoad()
