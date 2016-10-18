@@ -19,6 +19,7 @@
 		A268BBAC1DA3FC8600AAD868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A268BBAA1DA3FC8600AAD868 /* LaunchScreen.storyboard */; };
 		A268BBB71DA3FC8600AAD868 /* RelaxAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBB61DA3FC8600AAD868 /* RelaxAppTests.swift */; };
 		A268BBC21DA3FC8600AAD868 /* RelaxAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */; };
+		A28362901DB629D300717098 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A283628F1DB629D300717098 /* CloudKit.framework */; };
 		A2BDE6D91DA4052500D3C119 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2BDE6D81DA4052500D3C119 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		A268BBBD1DA3FC8600AAD868 /* RelaxAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RelaxAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A268BBC11DA3FC8600AAD868 /* RelaxAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxAppUITests.swift; sourceTree = "<group>"; };
 		A268BBC31DA3FC8600AAD868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A283628F1DB629D300717098 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		A2BDE6D81DA4052500D3C119 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A2BDE6DA1DA4053600D3C119 /* RelaxApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RelaxApp.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +70,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2BDE6D91DA4052500D3C119 /* MapKit.framework in Frameworks */,
+				A28362901DB629D300717098 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +160,7 @@
 		A2BDE6D71DA4052500D3C119 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A283628F1DB629D300717098 /* CloudKit.framework */,
 				A234DF061DAF952000356818 /* Old */,
 				A2BDE6D81DA4052500D3C119 /* MapKit.framework */,
 			);
@@ -241,7 +245,7 @@
 								enabled = 1;
 							};
 							com.apple.iCloud = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
