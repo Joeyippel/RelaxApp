@@ -151,7 +151,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="lPO-Ux-0rX">
-                            <rect key="frame" x="0.0" y="452" width="375" height="0.0"/>
+                            <rect key="frame" x="0.0" y="496" width="375" height="0.0"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </view>
@@ -200,8 +200,38 @@
                                             </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="STo-9d-OpD">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="k9D-V6-jUh">
                                         <rect key="frame" x="0.0" y="364" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="k9D-V6-jUh" id="urz-u3-fgz">
+                                            <frame key="frameInset" width="375" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" placeholder="Radius in meters" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ukb-X5-oPA">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                    <connections>
+                                                        <action selector="textFieldEditingChangedWithSender:" destination="aE4-da-Zeu" eventType="editingChanged" id="B2D-jB-efx"/>
+                                                    </connections>
+                                                </textField>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Radius" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uj-pM-Dhr">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ukb-X5-oPA" firstAttribute="leading" secondItem="7uj-pM-Dhr" secondAttribute="trailing" constant="10" id="1ma-S2-n5V"/>
+                                                <constraint firstItem="7uj-pM-Dhr" firstAttribute="leading" secondItem="urz-u3-fgz" secondAttribute="leadingMargin" constant="6" id="51K-Qe-uZR"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7uj-pM-Dhr" secondAttribute="bottom" constant="4" id="Jte-pC-IHC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ukb-X5-oPA" secondAttribute="bottom" constant="3" id="OaB-m8-6Sf"/>
+                                                <constraint firstItem="7uj-pM-Dhr" firstAttribute="top" secondItem="urz-u3-fgz" secondAttribute="topMargin" constant="5" id="nuE-3h-yh1"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ukb-X5-oPA" secondAttribute="trailing" constant="15" id="otT-AZ-ALR"/>
+                                                <constraint firstItem="Ukb-X5-oPA" firstAttribute="top" secondItem="urz-u3-fgz" secondAttribute="topMargin" constant="6" id="uav-Ve-vLg"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="STo-9d-OpD">
+                                        <rect key="frame" x="0.0" y="408" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="STo-9d-OpD" id="oyk-Ea-hUA">
                                             <frame key="frameInset" width="375" height="44"/>
@@ -231,7 +261,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="1s2-EL-eHQ">
-                                        <rect key="frame" x="0.0" y="408" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="452" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1s2-EL-eHQ" id="nDg-Mq-C67">
                                             <frame key="frameInset" width="375" height="43"/>
@@ -280,6 +310,7 @@
                         <outlet property="eventTypeSegmentedControl" destination="M9D-Gd-k0N" id="C0D-OK-bBy"/>
                         <outlet property="mapView" destination="mww-cM-MWE" id="t9r-bL-yuf"/>
                         <outlet property="noteTextField" destination="Jox-8X-4Pw" id="OVG-TJ-s3y"/>
+                        <outlet property="radiusTextField" destination="Ukb-X5-oPA" id="FZp-Xj-SyL"/>
                         <outlet property="zoomButton" destination="b2Q-Tz-t50" id="NVV-n8-cfj"/>
                     </connections>
                 </tableViewController>
