@@ -56,7 +56,7 @@ class GeotificationsViewController: UIViewController {
   func add(geotification: Geotification) {
     geotifications.append(geotification)
     mapView.addAnnotation(geotification)
-    addRadiusOverlay(forGeotification: geotification)
+   //  addRadiusOverlay(forGeotification: geotification)
     updateGeotificationsCount()
   }
   
@@ -65,31 +65,31 @@ class GeotificationsViewController: UIViewController {
       geotifications.remove(at: indexInArray)
     }
     mapView.removeAnnotation(geotification)
-    removeRadiusOverlay(forGeotification: geotification)
+    // removeRadiusOverlay(forGeotification: geotification)
     updateGeotificationsCount()
   }
   
   func updateGeotificationsCount() {
-    title = "Geotifications (\(geotifications.count))"
+    title = "Relax (\(geotifications.count))"
   }
   
   // MARK: Map overlay functions
-  func addRadiusOverlay(forGeotification geotification: Geotification) {
-    mapView?.add(MKCircle(center: geotification.coordinate, radius: geotification.radius))
-  }
+  //func addRadiusOverlay(forGeotification geotification: Geotification) {
+  //  mapView?.add(MKCircle(center: geotification.coordinate, radius: geotification.radius))
+  // }
   
-  func removeRadiusOverlay(forGeotification geotification: Geotification) {
+  // func removeRadiusOverlay(forGeotification geotification: Geotification) {
     // Find exactly one overlay which has the same coordinates & radius to remove
-    guard let overlays = mapView?.overlays else { return }
-    for overlay in overlays {
-      guard let circleOverlay = overlay as? MKCircle else { continue }
-      let coord = circleOverlay.coordinate
-      if coord.latitude == geotification.coordinate.latitude && coord.longitude == geotification.coordinate.longitude && circleOverlay.radius == geotification.radius {
-        mapView?.remove(circleOverlay)
-        break
-      }
-    }
-  }
+  //  guard let overlays = mapView?.overlays else { return }
+  //  for overlay in overlays {
+    //  guard let circleOverlay = overlay as? MKCircle else { continue }
+  //    let coord = circleOverlay.coordinate
+    //  if coord.latitude == geotification.coordinate.latitude && coord.longitude == geotification.coordinate.longitude && circleOverlay.radius == geotification.radius {
+      //   mapView?.remove(circleOverlay)
+      //  break
+     // }
+  //  }
+  // }
   
   // MARK: Other mapview functions
   @IBAction func zoomToCurrentLocation(sender: AnyObject) {
@@ -101,9 +101,9 @@ class GeotificationsViewController: UIViewController {
 // MARK: AddGeotificationViewControllerDelegate
 extension GeotificationsViewController: AddGeotificationsViewControllerDelegate {
   
-  func addGeotificationViewController(controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, radius: Double, identifier: String, note: String, eventType: EventType) {
+  func addGeotificationViewController(controller: AddGeotificationViewController, didAddCoordinate coordinate: CLLocationCoordinate2D, identifier: String, note: String, eventType: EventType) {
     controller.dismiss(animated: true, completion: nil)
-    let geotification = Geotification(coordinate: coordinate, radius: radius, identifier: identifier, note: note, eventType: eventType)
+    let geotification = Geotification(coordinate: coordinate, identifier: identifier, note: note, eventType: eventType)
     add(geotification: geotification)
     saveAllGeotifications()
   }
