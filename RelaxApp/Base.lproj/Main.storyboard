@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="114" y="1218"/>
         </scene>
-        <!--View Controller-->
+        <!--Foto-->
         <scene sceneID="VYc-XR-zzw">
             <objects>
-                <viewController id="muO-Co-T9h" sceneMemberID="viewController">
+                <viewController title="Foto" id="muO-Co-T9h" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="miD-bE-ENl"/>
                         <viewControllerLayoutGuide type="bottom" id="kuv-Sq-ARt"/>
@@ -264,7 +264,7 @@
                                         <rect key="frame" x="0.0" y="452" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1s2-EL-eHQ" id="nDg-Mq-C67">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTJ-o9-pTU">
